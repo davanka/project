@@ -1,8 +1,8 @@
 {
-  "name-web":"The Of Day",
-  "author":"VANKA",
+  "name-web":"STACKOVERFLOW MASKODING",
+  "author":"MASKODING",
   "remove-comment-html":true,
-  "target":"https://www.detik.com/",
+  "target":"https://www.detik.com",
   "name-folder-sitemap":"sitemap",
   "element-remove":[
     "script",
@@ -20,7 +20,20 @@
   ],
   "costom-element-remove":[
     {
-      "target":"https://www.detik.com",
+      "target":"davanka.netlify.app",
+      "element-remove-selector":[
+        ".js-dismissable-hero",
+        ".lazy-loading"
+      ],
+      "replace-string":[
+        {
+          "target":"https://davanka.netlify.app",
+          "replace":"${nameWeb}"
+        }
+      ]
+    },
+    {
+      "target":"m.detik.com",
       "element-remove-selector":[
         ".baca",
         ".op-interactive",
@@ -32,6 +45,25 @@
         ".box__reserved.ivideo_box",
         ".box__reserved.fb_box.ac.mb20.bgwhite.bdr.facebook",
         ".box__reserved.mh10"
+      ],
+      "replace-string":[]
+    },
+    {
+      "target":"www.itb.ac.id",
+      "element-remove-selector":[
+        ".box-header",
+        ".box-language",
+        ".section-10",
+        ".sidebar.active"
+      ],
+      "replace-string":[]
+    },
+    {
+      "target":"repositori.usu.ac.id",
+      "element-remove-selector":[
+        "header",
+        ".trail-wrapper",
+        "footer"
       ],
       "replace-string":[]
     }
@@ -193,25 +225,6 @@
         {
           "name-attribute":"content",
           "value-attribute":"${authorPost}"
-        }
-      ],
-      "data-innerHTML":"",
-      "position":"start"
-    },
-    {
-      "name-element":"script",
-      "data-attribute":[
-        {
-          "name-attribute":"async",
-          "value-attribute":"async"
-        },
-        {
-          "name-attribute":"src",
-          "value-attribute":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        },
-        {
-          "name-attribute":"data-ad-client",
-          "value-attribute":"ca-pub-XXXXXXXXXXX"
         }
       ],
       "data-innerHTML":"",
