@@ -2,7 +2,7 @@
   "name-web":"STACKOVERFLOW MASKODING",
   "author":"MASKODING",
   "remove-comment-html":true,
-  "target":"https://www.detik.com",
+  "target":"https://www.unilever.co.id/",
   "name-folder-sitemap":"sitemap",
   "element-remove":[
     "script",
@@ -20,7 +20,7 @@
   ],
   "costom-element-remove":[
     {
-      "target":"davanka.netlify.app",
+      "target":"https://www.unilever.co.id/",
       "element-remove-selector":[
         ".js-dismissable-hero",
         ".lazy-loading"
